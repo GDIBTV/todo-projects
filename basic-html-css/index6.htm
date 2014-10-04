@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Girl Develop It - Intro TODO</title>
+		<style>
+			body {
+				width: 100%;
+				font-family: Gotham, sans-serif;
+			}
+			h2 {
+				color: #f05b62;		
+				margin-top: 0px;					
+			}
+			.wrapper {
+				width: 960px;	
+				margin-left: auto;
+				margin-right: auto;
+			}			
+			.background-gradient {
+				background-color: #fff; /* fallback color if gradients are not supported */				
+				background-image: linear-gradient(0deg, #f05b62 0%, #fff 10%, #fff 90%, #f05b62); /* Standard syntax; must be last */				
+			}
+			/* TODO 6: Let's get rid of those bulletpoints that are brought in by default by lists. This is done by setting the list-style-type to none. This can be done to all lists by applying it to the ul element or you can specify the upcoming-classes elements. */			
+			.upcoming-classes li {
+				border: 3px #f05b62 solid;
+				border-radius: 25px;
+				margin: 10px auto;
+				padding: 15px 25px;
+				width: 700px;					
+				box-shadow: 0px 5px 3px #000;			
+			}
+			.upcoming-classes li img {
+				height: 100px;
+				border-radius: 25px;
+				padding: 20px;
+			}
+			.pull-left {
+				float: left;
+			}
+			.pull-right {
+				float: right;
+			}	
+			.more-info {
+				font-size: 14px;
+				padding: 10px;
+			}		
+			.highlight {
+
+			}
+		</style>
+		<script src="js/jquery-1.11.1.min.js"></script>		
+		<script>
+			function enlarge(element) {
+				$(element).css("height","198px");
+			}
+
+			function shrink(element) {
+				$(element).css("height","100px");
+			}
+		</script>
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="header">			
+			<img src="img/fullbanner.jpeg" />			
+		</div>
+		<div class="more-info pull-right">More information available at: <a target="_new" href="http://www.meetup.com/Girl-Develop-It-Burlington/">http://www.meetup.com/Girl-Develop-It-Burlington/</a></div>
+		<h1>Upcoming Classes</h1>		
+		<ul class="upcoming-classes">
+			<!-- TODO 7: Let's pretty up the li elements. We can use the class background-gradient or migrate the style to a class that's applicable for this element -->
+			<li>
+				<!-- TODO 8: We would like to enlarge the images on mouse over and return to normal size on mouse out. Functions have already been created that accept an element. This can be done by passing "this" into the function-->
+				<img src="img/openclipart_db.png" class="pull-left" />
+				<h3>Intro to Relational Databases</h3>
+				<p>
+With our Introduction to Relational Databases class, you'll learn the foundation of relational databases so that you can design, create, and store information, and manipulate that information into knowledge. We'll start out with modeling and design, using Entity Relationship Diagrams. Then, you'll learn ANSI SQL to create your database, store your data, change your data, and ask questions of your data. Although we'll focus on MySQL and MySQL Workbench (an open source database, and one of the top databases used in the world), most of the skills and techniques learned will be universal (and if they're not, we'll try and point out what differences there might be with other popular databases). We focus solely on the database end, so how to hook everything up to your application will be out of scope; but we should give you almost everything else you need to get there.
+				</p>
+			</li>
+			<li>				
+				<img src="img/w3_html5.png" class="pull-right" />
+				<h3>Intermediate HTML and CSS</h3>
+				<p>
+Through the course of this 4 session class, you'll get a thorough introduction to HTML5 and CSS3 to build on your previous knowledge. You'll get hands-on experience working with HTML5 features like semantic elements and forms, and you'll learn new CSS3 properties and abilities including transformations, transitions, and animation. Finally, we'll dig into responsive design and browser compatibility.
+				</p>
+			</li>	
+		</ul>
+	</div>
+	</body>
+</html>
